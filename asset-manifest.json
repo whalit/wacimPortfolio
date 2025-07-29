@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "https://whalit.github.io/wacimPortfolio/static/css/main.3642447e.css",
-    "main.js": "https://whalit.github.io/wacimPortfolio/static/js/main.c1c7bf84.js",
+    "main.js": "https://whalit.github.io/wacimPortfolio/static/js/main.3d6697bc.js",
     "static/media/saw.png": "https://whalit.github.io/wacimPortfolio/static/media/saw.9c90fdca58e172b179f5.png",
     "static/media/fa-solid-900.svg": "https://whalit.github.io/wacimPortfolio/static/media/fa-solid-900.9fa614346b4e81decc62.svg",
     "static/media/fa-brands-400.svg": "https://whalit.github.io/wacimPortfolio/static/media/fa-brands-400.6fcab609e2f62d5c3104.svg",
@@ -47,10 +47,10 @@
     "static/media/education.svg": "https://whalit.github.io/wacimPortfolio/static/media/education.d5cc42f042227db12468.svg",
     "index.html": "https://whalit.github.io/wacimPortfolio/index.html",
     "main.3642447e.css.map": "https://whalit.github.io/wacimPortfolio/static/css/main.3642447e.css.map",
-    "main.c1c7bf84.js.map": "https://whalit.github.io/wacimPortfolio/static/js/main.c1c7bf84.js.map"
+    "main.3d6697bc.js.map": "https://whalit.github.io/wacimPortfolio/static/js/main.3d6697bc.js.map"
   },
   "entrypoints": [
     "static/css/main.3642447e.css",
-    "static/js/main.c1c7bf84.js"
+    "static/js/main.3d6697bc.js"
   ]
 }
