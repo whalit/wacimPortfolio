@@ -11,7 +11,7 @@ import { settings } from "../portfolio.js";
 export default class Main extends Component {
   render() {
     return (
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/wacimPortfolio">
         <Switch>
           <Route
             path="/"
