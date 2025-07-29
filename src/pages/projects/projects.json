@@ -1,0 +1,114 @@
+{
+  "data": [
+    {
+      "id": "MDEwOlJlcG9zaXRvcnkyNDU0NjcyNzQ=",
+      "name": "Master Thesis - Real-time Fall Detection & Routing for Wheelchair Users",
+      "createdAt": "2020-03-06T16:26:54Z",
+      "url": "https://drive.google.com/file/d/1hL_CsAE6_kUBV6_yv8zXXBlv8E7r3wOn/view?usp=sharing",
+      "description": "Designed to provide technological assistance to wheelchair users post-rehabilitation period with the goal of securing public funding for implementation. Created annotated dataset from sensor readings for robust anomaly detection model training and developed fall detection model optimized for wheelchair users' movement patterns. Built real-time data pipelines with integrated routing capabilities for Android app.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Kotlin",
+          "iconifyClass": "material-icon-theme:kotlin"
+        },
+        {
+          "name": "Android SDK",
+          "iconifyClass": "skill-icons:androidstudio-dark"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        },
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOJWL0-g",
+      "name": "Rexana - Intelligent Q&A",
+      "createdAt": "2022",
+      "url": "https://sciences.brussels/printemps/projet-expo/rexana-lintelligence-artificielle-qui-explore-les-connaissances-du-monde-pour-vous/",
+      "description": "AI-powered question-answering system that explores world knowledge by intelligently searching the internet to provide answers, as part of my final year Bachelor's project at ULB.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "NLP",
+          "iconifyClass": "ion:language-sharp"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOG_vYHA",
+      "name": "Protein RNA Interface Predictor",
+      "createdAt": "2023",
+      "url": "https://github.com/whalit/PRIP-Protein-RNA-Interface-Predictor",
+      "description": "In the Advanced Methods in Bioinformatics course, we reproduced a research paper on RNA-protein interaction prediction using PRIP, a sequence semantics-based method that combines Word2vec embeddings with Extreme Gradient Boosting, successfully achieving the reported 73% sensitivity on cross-validation and outperforming existing methods.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+        {
+          "name": "Jupyter Notebook",
+          "iconifyClass": "logos:jupyter"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOG0_8uQ",
+      "name": "Sort in Short - Hackalgeria 2022",
+      "createdAt": "2022",
+      "url": "",
+      "description": "Co-founded 'Sort in Short' startup during the Hackathon- an Uber-like platform for plastic waste collection with gamified rewards system.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "HTML",
+          "iconifyClass": "logos-html-5"
+        },
+        {
+          "name": "CSS",
+          "iconifyClass": "logos-css-3"
+        },
+        {
+          "name": "Adobe XD",
+          "iconifyClass": "skill-icons:androidstudio-dark"
+        },
+        {
+          "name": "JavaScript",
+          "iconifyClass": "logos-javascript"
+        }
+      ]
+    },
+    {
+      "id": "R_kgDOGcPKSQ",
+      "name": "Chess Openings Analytics Dashboard",
+      "createdAt": "2023",
+      "url": "https://github.com/whalit/streamlit-chess",
+      "description": "Developed an interactive chess openings visualization dashboard in Streamlit, providing statistical insights and clear visual analytics to help beginner and intermediate players understand opening theory and performance metrics.",
+      "isFork": false,
+      "languages": [
+        {
+          "name": "Python",
+          "iconifyClass": "logos-python"
+        },
+                {
+          "name": "Jupyter Notebook",
+          "iconifyClass": "logos:jupyter"
+        },
+                        {
+          "name": "Streamlit",
+          "iconifyClass": "devicon:streamlit"
+        }
+      ]
+    }
+  ]
+}

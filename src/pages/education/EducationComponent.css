@@ -1,0 +1,85 @@
+.education-main {
+  width: 100%;
+}
+
+.basic-education {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.heading-div {
+  display: flex;
+}
+
+.heading-div > * {
+  flex: 1;
+}
+
+.heading-img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Add these styles to the container if you want to control the circle's size here */
+  /* For example, if you want a fixed size circle container */
+  /* width: 200px; */
+  /* height: 200px; */
+  /* overflow: hidden; */ /* Ensures anything outside the circle is hidden */
+  /* border-radius: 50%; */ /* Makes the container itself circular */
+}
+
+.heading-img-div > img { /* Target the image directly */
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the circle area */
+  /* If the parent .heading-img-div has a fixed width/height and overflow: hidden,
+     you might not need max-width: 100% and height: auto here,
+     but it's generally good practice for responsiveness. */
+  width: 100%; /* Make the image take 100% width of its parent */
+  height: 100%; /* Make the image take 100% height of its parent */
+}
+
+
+.heading-text-div {
+  text-align: center;
+}
+
+.heading-text {
+  font-size: 56px;
+  font-weight: 400;
+  font-family: "Google Sans Medium";
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.heading-sub-text {
+  font-size: 30px;
+  font-family: "Google Sans Regular";
+  text-align: center;
+}
+
+@media (max-width: 1380px) {
+  .heading-text {
+    font-size: 50px;
+    margin-top: 80px;
+  }
+  .heading-sub-text {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .heading-text {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .heading-sub-text {
+    font-size: 20px;
+  }
+
+  .heading-div {
+    flex-direction: column;
+  }
+}

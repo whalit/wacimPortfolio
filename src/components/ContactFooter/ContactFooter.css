@@ -1,0 +1,113 @@
+.contact-footer {
+  width: 100%;
+  padding: 60px 20px;
+  margin-top: 80px;
+  border-top: 2px solid rgba(128, 128, 128, 0.2);
+  text-align: center;
+}
+
+.contact-footer-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-footer-title {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Google Sans Medium";
+  margin: 0 0 40px 0;
+  text-align: center;
+}
+
+.contact-details-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  margin-top: 20px;
+}
+
+.contact-detail-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  min-width: 200px;
+}
+
+.contact-detail-item:hover {
+  transform: translateY(-3px);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-footer-icon {
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #2b1958;
+  flex-shrink: 0;
+}
+
+.contact-detail-item h4 {
+  font-size: 16px;
+  font-family: "Google Sans Medium";
+  margin: 0 0 5px 0;
+}
+
+.contact-detail-item p {
+  font-size: 14px;
+  font-family: "Google Sans Regular";
+  margin: 0;
+  line-height: 1.4;
+}
+
+.contact-detail-item a:hover {
+  text-decoration: underline !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-footer {
+    padding: 40px 15px;
+    margin-top: 60px;
+  }
+
+  .contact-footer-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .contact-details-grid {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-detail-item {
+    padding: 15px;
+    min-width: auto;
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+  }
+
+  .contact-footer-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+
+  .contact-detail-item h4 {
+    font-size: 14px;
+  }
+
+  .contact-detail-item p {
+    font-size: 13px;
+  }
+}

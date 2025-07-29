@@ -1,0 +1,283 @@
+.projects-main {
+  width: 100%;
+  text-align: center;
+}
+
+.basic-projects {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.projects-heading-div {
+  display: flex;
+  justify-content: center; /* Center the heading content */
+  align-items: center;
+}
+
+.projects-heading-div > * {
+  flex: 1;
+}
+
+.projects-heading-img-div {
+  display: none; /* Hide image div to center text properly */
+}
+
+.projects-heading-text-div {
+  text-align: center;
+  width: 100%; /* Take full width for proper centering */
+  margin: 0 auto; /* Center the text div */
+}
+
+.projects-heading-img-div > * {
+  max-width: 100%;
+  height: auto;
+}
+
+.projects-heading-text {
+  font-size: 56px;
+  font-weight: bold; /* Make title bold */
+  font-family: "Google Sans Medium";
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px; /* Add space between title and subtitle */
+}
+
+.projects-heading-sub-text {
+  font-size: 30px;
+  font-weight: normal; /* Keep subtitle normal weight */
+  font-family: "Google Sans Regular";
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.projects-header-detail-text {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px; /* Limit width for better readability */
+  font-family: "Google Sans Medium";
+  text-align: center; /* Center the description text */
+}
+
+.publications-heading-text-div {
+  text-align: center;
+  font-family: "Google Sans Regular";
+  margin-top: 70px;
+}
+
+.publications-heading-text {
+  font-size: 56px;
+  font-weight: 600;
+}
+
+.repo-cards-div-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes égales */
+  gap: 2rem;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 60px;
+  max-width: 1200px; /* Limite la largeur totale */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Project Card Wrapper */
+.project-card-wrapper {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+/* More Text Link */
+.more-text-link {
+  display: block;
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "Google Sans Regular";
+  margin-top: 10px;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.more-text-link:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+/* Modal Styles */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.modal-content {
+  position: relative;
+  background-color: transparent;
+  max-width: 90%;
+  max-height: 90%;
+  overflow-y: auto;
+  border-radius: 15px;
+  animation: modalFadeIn 0.3s ease;
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1001;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-close-btn:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+
+.expanded-project-card {
+  transform: scale(1.3);
+  min-width: 400px;
+  max-width: 600px;
+}
+
+/* Modal Animation */
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Disable hover effects when modal is open */
+.modal-overlay ~ .repo-cards-div-main .repo-card-div:hover {
+  transform: none;
+}
+
+/* Project Card Hover Effects */
+.repo-card-div {
+  transition: all 0.3s ease;
+  overflow: hidden;
+  height: auto;
+  max-height: 300px; /* Initial collapsed height */
+}
+
+.repo-card-div:hover {
+  transform: scale(1.05);
+  max-height: none; /* Remove height restriction on hover */
+  z-index: 10;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Project text that gets expanded */
+.repo-text {
+  transition: all 0.3s ease;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Show only 3 lines initially */
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.repo-card-div:hover .repo-text {
+  -webkit-line-clamp: unset; /* Show all text on hover */
+  overflow: visible;
+}
+
+/* Project description/content */
+.repo-description {
+  transition: all 0.3s ease;
+  max-height: 80px; /* Initial collapsed height for description */
+  overflow: hidden;
+}
+
+.repo-card-div:hover .repo-description {
+  max-height: none; /* Expand description on hover */
+}
+
+/* Smooth animation for project cards */
+.repo-card-div {
+  position: relative;
+  cursor: pointer;
+}
+
+.repo-card-div:hover {
+  position: relative;
+  z-index: 999;
+}
+
+@media (max-width: 1380px) {
+  .projects-heading-text {
+    font-size: 50px;
+    margin-top: 80px;
+  }
+  .projects-heading-sub-text {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-heading-text,
+  .publications-heading-text {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .projects-heading-sub-text {
+    font-size: 20px;
+  }
+
+  .projects-heading-div {
+    flex-direction: column;
+  }
+
+  .projects-header-detail-text {
+    font-size: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    line-height: normal;
+    text-align: center;
+  }
+
+  .repo-cards-div-main {
+    grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 30px;
+    gap: 1rem;
+  }
+
+  /* Disable hover effects on mobile for better touch experience */
+  .repo-card-div:hover {
+    transform: none;
+    max-height: none;
+  }
+}

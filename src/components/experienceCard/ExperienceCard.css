@@ -1,0 +1,140 @@
+/* src/components/experienceCard/ExperienceCard.css */
+
+.experience-section-title {
+  width: 100%;
+  text-align: center;
+}
+
+.experience-degree-card {
+  display: flex;
+  width: 90%;
+  max-width: 1000px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.experience-card-title {
+  font-family: "Google Sans Medium";
+  font-size: 23px;
+  margin: 0;
+}
+
+.experience-card-subtitle {
+  font-family: "Google Sans Medium";
+  font-size: 18px;
+  margin: 0;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
+.experience-card-subtitle a {
+  text-decoration: none;
+}
+
+.experience-card-subtitle a:hover {
+  text-decoration: underline;
+}
+
+.experience-card-img {
+  width: 200px;
+  height: auto;
+  border-radius: 60%;
+  padding: 10px;
+}
+
+.experience-body-header {
+  max-width: inherit;
+  display: flex;
+  border-radius: 7px 7px 0px 0px;
+  padding: 10px;
+}
+
+.experience-body-header-title {
+  align-items: flex-start;
+  width: 80%;
+}
+
+.experience-body-header-duration {
+  width: 20%;
+}
+
+.experience-duration {
+  font-family: "Google Sans Regular";
+  font-size: 16px;
+  padding-right: 10px;
+  float: right;
+  margin: 0;
+}
+
+.experience-body-content {
+  max-width: inherit;
+  border-radius: 0px 0px 7px 7px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.experience-content-list {
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "Google Sans Regular";
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+
+.experience-card-body {
+  border-bottom: 1px solid #d9dbdf;
+  border-left: 1px solid #d9dbdf;
+  border-right: 1px solid #d9dbdf;
+  border-radius: 7px;
+  margin: 10px;
+  box-shadow: 5px 5px 5px #d9dbdf;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 1380px) {
+}
+
+@media (max-width: 768px) {
+  .experience-degree-card {
+    flex-direction: column;
+  }
+
+  .experience-body-header {
+    flex-direction: column;
+  }
+
+  .experience-body-header-title {
+    width: 100%;
+  }
+
+  .experience-body-header-duration {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+
+  .experience-duration {
+    padding: 0px;
+    margin: 0px;
+    float: left;
+  }
+
+  .experience-card-img {
+    width: 200px;
+  }
+
+  .experience-card-body {
+    width: 100% !important;
+  }
+
+  .experience-card-title {
+    font-size: 20px;
+  }
+
+  .experience-card-subtitle {
+    font-size: 16px;
+  }
+}
