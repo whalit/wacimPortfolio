@@ -2,7 +2,7 @@
   "private": true,
   "name": "WacimPortfolio",
   "version": "0.1.0",
-  "homepage": "https://whalit.github.io/wacimPortfolio",
+  "homepage": "https://whalit.github.io/home",
 "scripts": {
   "build": "cross-env PUBLIC_URL=https://whalit.github.io/wacimPortfolio react-scripts --openssl-legacy-provider build",
   "predeploy": "npm run build",
