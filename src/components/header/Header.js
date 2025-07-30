@@ -95,17 +95,6 @@ class Header extends Component {
                   Projects
                 </NavLink>
               </li>
-              <li>
-                <a
-                  href="#contact"
-                  onClick={scrollToContact}
-                  style={{ color: theme.text, display: "block", padding: "20px 20px", textDecoration: "none" }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Contact Me
-                </a>
-              </li>
             </ul>
           </header>
         </div>
